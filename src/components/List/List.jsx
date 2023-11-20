@@ -8,6 +8,7 @@ function List() {
         <li onClick={() =>  onSelectPost(post) } key={i}>
           <h3>{post.title}</h3>
           <p>{post.body}</p>
+          <img src={post.image} alt={post.title} />
         </li>
       ))}
     </ul>
