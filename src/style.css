@@ -168,6 +168,10 @@ aside li {
   align-items: center;
 }
 
+.list-image {
+  width: 100%; /* 100% of the parent */
+}
+
 h2 + button {
   margin-bottom: 24px;
 }

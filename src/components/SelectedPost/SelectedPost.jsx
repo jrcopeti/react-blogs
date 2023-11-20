@@ -7,6 +7,7 @@ function SelectedPost() {
     <div>
       <h2>{selectedPost.title}</h2>
       <p>{selectedPost.body}</p>
+      <img src={selectedPost.image} alt={selectedPost.title} />
     </div>
   );
 
