@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { usePosts } from "../PostContext/PostContext";
 
 import SearchPosts from "../SearchPosts/SearchPosts";

@@ -17,6 +17,8 @@ function PostProvider({ children }) {
   );
   const [searchQuery, setSearchQuery] = useState("");
 
+  const [selectedPost, setSelectedPost] = useState(null);
+
   // Derived state. These are the posts that will actually be displayed
   const searchedPosts =
     searchQuery.length > 0
@@ -35,6 +37,10 @@ function PostProvider({ children }) {
     setPosts([]);
   }
 
+  function handleSelectPost(post) {
+    setSelectedPost(post);
+  }
+
   return (
   // 2. wrap the components that need access to the context in a Provider and pass the value
 
@@ -45,6 +51,8 @@ function PostProvider({ children }) {
         onClearPosts: handleClearPosts,
         searchQuery,
         setSearchQuery,
+        selectedPost,
+        onSelectPost: handleSelectPost,
       }}
     >
       {children}
