@@ -15,7 +15,10 @@ function List() {
               alt={post.title}
               onClick={() => onSelectPost(post)}
             />
+            <div className={styles.buttonDiv}>
+            <button className={styles.show} onClick={() => onSelectPost(post)}>Show</button>
             <button onClick={() => onArchivePost(post)}>Archive</button>
+            </div>
           </li>
         ))}
       </ul>

@@ -1,11 +1,57 @@
 .listDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.listDiv li {
   display: flex;
-  flex-direction: column;
-  
-  gap: 32px;
+  flex-flow: column;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.listDiv li h3 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+
+
+
 }
 
 .image {
-  width: 200px;
+  width: 353px;
   height: auto;
+}
+
+.buttonDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+.buttonDiv button {
+  padding: 4px 24px;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-medium-light);
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.buttonDiv button:focus {
+  outline: 2px solid var(--color-medium-light);
+  border-radius: 50px;
+}
+
+.buttonDiv button:hover {
+  outline: 2px solid var(--color-medium-light);
+  border-radius: 50px;
 }

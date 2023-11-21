@@ -3,4 +3,9 @@
   padding: 0;
   height: 451px;
   overflow: scroll;
+
+}
+.listDiv{
+  display: flex;
+  flex-direction: column;
 }
