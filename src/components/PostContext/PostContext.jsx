@@ -4,15 +4,27 @@ import { faker } from "@faker-js/faker";
 const NUM_POSTS = 3;
 const NUM_POSTS_ARCHIVE = 10;
 
+
+function createDate() {
+const date = faker.date.recent();
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+return date.toLocaleDateString('en-US', options);
+}
+
 function createRandomPost() {
   const timestamp = new Date().getTime();
   const randomNum = Math.floor(Math.random() * 1000);
   const randomImage = `https://source.unsplash.com/random/800x600?sig=${timestamp}-${randomNum}`;
 
+
+
   return {
     id: `${timestamp}-${randomNum}`,
     title: faker.hacker.phrase(),
     body: faker.lorem.paragraph(),
+    author: faker.person.fullName(),
+    date: createDate(),
+    subject: faker.hacker.noun(),
     image: randomImage,
   };
 }
