@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <h1>
+      <h1 className={styles.headerTitle}>
         The Hype Blog
       </h1>
       <div className={styles.searchDiv}>
