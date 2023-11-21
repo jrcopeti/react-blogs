@@ -1,0 +1,11 @@
+.buttonClearPosts {
+  display: inline-flex;
+  gap: 5px;
+  padding: 4px 8px;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-medium-light);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white)
+}

@@ -7,8 +7,8 @@ const NUM_POSTS_ARCHIVE = 10;
 function createRandomPost() {
   const timestamp = new Date().getTime();
   const randomNum = Math.floor(Math.random() * 1000);
-
   const randomImage = `https://source.unsplash.com/random/800x600?sig=${timestamp}-${randomNum}`;
+
   return {
     id: `${timestamp}-${randomNum}`,
     title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,

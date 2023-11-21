@@ -1,11 +1,10 @@
-import FormAddPost from "../FormAddPost/FormAddPost";
-import Posts from "../Posts/Posts";
+
+import SelectedPost from "../SelectedPost/SelectedPost";
 
 function Main() {
   return (
     <main>
-      <FormAddPost  />
-      <Posts  />
+   <SelectedPost/>
     </main>
   );
 }

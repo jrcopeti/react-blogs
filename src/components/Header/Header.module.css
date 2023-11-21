@@ -1,0 +1,19 @@
+.header {
+  margin-bottom: 32px;
+  font-weight: 300;
+  justify-content: space-between;
+  display: flex;
+  color: var(--color--white);
+}
+
+.header-title{
+  font-size: 23px;
+  font-weight: 300;
+
+}
+
+.searchDiv{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
