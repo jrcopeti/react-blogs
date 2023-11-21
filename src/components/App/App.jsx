@@ -7,6 +7,8 @@ import Archive from "../Archive/Archive";
 import Footer from "../Footer/Footer";
 import Sidebar from "../Sidebar/Sidebar";
 
+import styles from "./App.module.css";
+
 function App() {
   // // Whenever `isFakeDark` changes, we toggle the `fake-dark-mode` class on the HTML element (see in "Elements" dev tool).
   // const [isFakeDark, setIsFakeDark] = useState(false);
@@ -18,22 +20,25 @@ function App() {
   // );
 
   return (
-    <section>
+    <>
+
+      <PostProvider>
+      <Header />
+    <section className={styles.appSection}>
       {/* <button
         onClick={() => setIsFakeDark((isFakeDark) => !isFakeDark)}
         className="btn-fake-dark-mode"
-      >
+        >
         {isFakeDark ? "☀️" : "🌙"}
       </button> */}
 
-      <PostProvider>
-        <Header />
         <Main />
         <Sidebar />
+    </section>
         <Archive />
         <Footer />
       </PostProvider>
-    </section>
+      </>
   );
 }
 

@@ -1,0 +1,6 @@
+.main {
+  grid-column: span 9; /* Featured article spans 8 out of 12 columns */
+  grid-row: span 4; /* Spans 2 rows for more vertical space */
+  padding: 0px;
+  margin-right: 30px;
+}

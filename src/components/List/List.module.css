@@ -1,0 +1,11 @@
+.listDiv {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 32px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+}

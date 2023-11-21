@@ -11,12 +11,13 @@ function createRandomPost() {
 
   return {
     id: `${timestamp}-${randomNum}`,
-    title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,
-    body: faker.hacker.phrase(),
+    title: faker.hacker.phrase(),
+    body: faker.lorem.paragraph(),
     image: randomImage,
   };
 }
 
+// title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,
 // 1. Create a context
 const PostContext = createContext();
 
@@ -31,7 +32,7 @@ function PostProvider({ children }) {
 
   const [searchQuery, setSearchQuery] = useState("");
 
-  const [selectedPost, setSelectedPost] = useState(null);
+  const [selectedPost, setSelectedPost] = useState(posts[0]);
 
   // Derived state. These are the posts that will actually be displayed
   const searchedPosts =
@@ -58,7 +59,7 @@ function PostProvider({ children }) {
   }
 
   function handleSelectPost(post) {
-    setSelectedPost((cur) => (cur === post ? null : post));
+    setSelectedPost(post);
   }
 
 

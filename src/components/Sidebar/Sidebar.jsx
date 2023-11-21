@@ -1,9 +1,10 @@
 import FormAddPost from "../FormAddPost/FormAddPost"
 import Posts from "../Posts/Posts"
+import styles from "./Sidebar.module.css"
 
 function Sidebar() {
   return (
-    <aside>
+    <aside className={styles.sidebar}>
        <FormAddPost  />
         <Posts  />
 

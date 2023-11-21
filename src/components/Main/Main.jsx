@@ -1,9 +1,9 @@
 
 import SelectedPost from "../SelectedPost/SelectedPost";
-
+import styles from "./Main.module.css";
 function Main() {
   return (
-    <main>
+    <main className={styles.main}>
    <SelectedPost/>
     </main>
   );

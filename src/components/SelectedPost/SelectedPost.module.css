@@ -1,0 +1,24 @@
+.selectedPostDiv{
+display: flex;
+}
+
+.selectedPostDivOverlay {
+ display: grid;
+ row-gap: 20px;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+}
+
+.title {
+  font-size: 40px; /* Large font size for the featured article title */
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.body {
+  font-size: 16px;
+}
