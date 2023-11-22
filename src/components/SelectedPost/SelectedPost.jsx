@@ -1,12 +1,10 @@
 import { usePosts } from "../PostContext/PostContext";
 import styles from "./SelectedPost.module.css";
 
-
-
 function SelectedPost() {
   const { selectedPost } = usePosts();
   if (!selectedPost) return null;
-  console.log(selectedPost)
+  console.log(selectedPost);
 
   return (
     <div className={styles.selectedPostDiv}>

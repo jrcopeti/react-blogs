@@ -3,27 +3,24 @@
   padding: 0;
   height: 452px;
   overflow: scroll;
-
 }
 
-.formDiv{
+.formDiv {
   grid-column: span 3;
 }
-.listDiv{
+.listDiv {
   display: flex;
   flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
   .sidebar {
-
     height: 300px;
-   overflow: scroll;
-   order: 0;
+    overflow: scroll;
+    order: 0;
   }
 
-  .formDiv{
+  .formDiv {
     padding: 12px;
   }
-
 }
