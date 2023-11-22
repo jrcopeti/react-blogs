@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { faker } from "@faker-js/faker";
 
-const NUM_POSTS = 3;
+const NUM_POSTS = 10;
 const NUM_POSTS_ARCHIVE = 10;
 
 
@@ -68,6 +68,7 @@ function PostProvider({ children }) {
   }
   function handleClearPosts() {
     setPosts([]);
+    setSelectedPost(null)
   }
 
   function handleSelectPost(post) {

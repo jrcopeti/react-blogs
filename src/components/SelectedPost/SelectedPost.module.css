@@ -10,10 +10,12 @@ display: flex;
 }
 
 .selectedPostDivAuthorDateSubject {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center
-
+  justify-items: center */
+display: flex;
+justify-content: space-between;
+aligh-items: center;
 
 }
 
