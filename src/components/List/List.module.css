@@ -66,3 +66,16 @@
   outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .listDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    width: 40%;
+    height: auto;
+  }
+
+
+}

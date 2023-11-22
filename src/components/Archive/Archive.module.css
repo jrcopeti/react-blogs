@@ -90,3 +90,23 @@ button:hover {
   outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .archive ul {
+    flex-direction: column; /* Stack the list items vertically */
+    overflow-x: hidden;
+  }
+
+  .archive img {
+    width: 100%; /* Full width */
+  }
+
+  .archive p,
+  .archive h2,
+  .addButton,
+  .showButton,
+  .hideButton {
+    /* Adjust the font sizes and paddings as needed */
+  }
+
+}
