@@ -58,6 +58,7 @@ function PostProvider({ children }) {
     setArchivedPosts((archivedPosts) =>
       archivedPosts.filter((p) => p.id !== post.id)
     );
+    setSelectedPost(post);
   }
 
   function handleArchivePosts(post) {

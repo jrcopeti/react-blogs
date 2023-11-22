@@ -30,6 +30,7 @@
 .archive img {
   width: 200px;
   height: auto;
+  cursor: pointer;
 }
 
 .archive p {
