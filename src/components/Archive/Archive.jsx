@@ -25,10 +25,17 @@ function Archive() {
             <li key={archivedPosts.id}>
               <p>{post.title}</p>
               <img
-              className={styles.image}
-              src={post.image}
-              alt={post.title}/>
-              <button className={styles.addButton} onClick={() => onAddPost(post)}>Add as new post</button>
+                className={styles.image}
+                src={post.image}
+                alt={post.title}
+                onClick={() => onAddPost(post)}
+              />
+              <button
+                className={styles.addButton}
+                onClick={() => onAddPost(post)}
+              >
+                Add as new post
+              </button>
             </li>
           ))}
         </ul>

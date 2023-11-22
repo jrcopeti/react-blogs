@@ -23,6 +23,7 @@
 .image {
   width: 353px;
   height: auto;
+  cursor: pointer;
 }
 
 .buttonDiv {

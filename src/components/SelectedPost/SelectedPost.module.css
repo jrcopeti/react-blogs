@@ -22,13 +22,13 @@
 }
 
 .image {
-  width: 600px;
+  width: 713px;
   height: auto;
-  margin: 0px 20px 0px 20px;
+  margin: 0px;
 }
 
 .title {
-  font-size: 40px; /* Large font size for the featured article title */
+  font-size: 40px;
   font-family: inherit;
   font-weight: 300;
   text-transform: capitalize;
@@ -53,19 +53,19 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px
+    margin-bottom: 15px;
   }
 
   .image {
-    width: 100%; /* Full width of the screen */
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .title {
-    font-size: 24px; /* Adjust font size for mobile */
+    font-size: 24px;
   }
   .body {
-    font-size: 14px; /* Adjust body font size for mobile */
+    font-size: 14px;
   }
 }

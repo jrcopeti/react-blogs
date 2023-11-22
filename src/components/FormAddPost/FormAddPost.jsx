@@ -32,7 +32,7 @@ function FormAddPost() {
       subject: faker.hacker.noun(),
       image: randomImage,
     };
-    console.log(newPost)
+    console.log(newPost);
     onAddPost(newPost);
     onSelectPost(newPost);
     setTitle("");
