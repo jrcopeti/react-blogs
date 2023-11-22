@@ -69,12 +69,39 @@
 
 @media only screen and (max-width: 768px) {
   .listDiv {
-    grid-template-columns: 1fr;
+    display: inline-flex;
+    align-items: end;
+  }
+
+  .listDiv li{
+    gap:10px;
+  }
+
+  .listDiv li h3 {
+    font-size: 12px;
+    padding: 5px 0px;
   }
 
   .image {
-    width: 40%;
+    width: 90%;
     height: auto;
+  }
+  .buttonDiv {
+
+    column-gap: 5px;
+  }
+
+  .show {
+    padding: 4px 14px;
+
+    font-size: 14px;
+  }
+
+
+  .archive {
+    padding: 4px 10px;
+
+    font-size: 14px;
   }
 
 

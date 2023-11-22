@@ -5,6 +5,10 @@
   overflow: scroll;
 
 }
+
+.formDiv{
+  grid-column: span 3;
+}
 .listDiv{
   display: flex;
   flex-direction: column;
@@ -13,14 +17,10 @@
 @media only screen and (max-width: 768px) {
   .sidebar {
 
-
   /* Convert the sidebar to a top bar or hide it */
-   height: 100%;
-   overflow: visible;
+    height: 250px;
+   overflow: scroll;
    order: 0; /* Move it above the main content */
   }
 
-  .listDiv {
-    flex-direction: column;
-  }
 }

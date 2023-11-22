@@ -4,12 +4,16 @@ import styles from "./Sidebar.module.css";
 
 function Sidebar() {
   return (
-    <aside className={styles.sidebar}>
-      <FormAddPost />
-      <div className={styles.listDiv}>
-        <Posts />
+    <>
+      <div className={styles.formDiv}>
+        <FormAddPost />
       </div>
-    </aside>
+      <aside className={styles.sidebar}>
+        <div className={styles.listDiv}>
+          <Posts />
+        </div>
+      </aside>
+    </>
   );
 }
 

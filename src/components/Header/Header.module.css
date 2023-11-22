@@ -28,7 +28,8 @@
   }
 
   .headerTitle {
-    font-size: 16px; /* Adjust the header title for mobile */
+    font-size: 16px;
+    text-align: center; /* Adjust the header title for mobile */
   }
 
   .searchDiv {
@@ -36,5 +37,6 @@
     flex-direction: column-reverse;
     gap: 5px;
     align-items: center;
+    justify-content: center;
   }
 }

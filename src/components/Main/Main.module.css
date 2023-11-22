@@ -9,7 +9,7 @@
   .main {
     grid-column: 1 / -1; /* Takes full width */
     margin-right: 0;
-    padding: 0 15px; /* Add some padding on the sides */
+    padding: 0 5px; /* Add some padding on the sides */
   }
 
 }
