@@ -7,13 +7,6 @@ https://the-gallery-blog.netlify.app/
 
 ![Screenshot](./public/screenshot.1.png)
 
-
-Image Visualization: Each post is accompanied by vivid imagery, ensuring that every story is told not just with words but with impactful visuals.
-Interactivity: Engage with posts using features like:
-Show: Select and highlight posts to read their full content within the application.
-Archive: Conveniently archive posts for future reference, decluttering the main feed while preserving content for later perusal.
-Submit: A user-friendly submission form allows for the addition of new posts. Submitted posts are instantly displayed as selected, showcasing the seamless integration of user-generated content.
-
 ## Features
 
 - **Show, Archive, Submit Pictures:**: Engage with posts and different pictures and interactions.
