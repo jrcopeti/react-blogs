@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.headerTitle}>
-        The Hype Blog
+        The Gallery Blog
       </h1>
       <div className={styles.searchDiv}>
         <Results />

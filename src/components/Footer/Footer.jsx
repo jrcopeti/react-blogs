@@ -1,5 +1,5 @@
 function Footer() {
-  return <footer>&copy; by The Atomic Blog ✌️</footer>;
+  return <footer style={{display: "flex", }}> &copy; by JC <span>✌️</span> </footer>;
 }
 
 export default Footer;

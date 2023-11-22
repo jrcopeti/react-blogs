@@ -4,8 +4,7 @@ function Results() {
   const { posts } = usePosts();
   return (
     <p className={styles.results}>
-      <span>🔎 </span>
-      {posts.length} hype posts found
+      {posts.length} post(s) found
     </p>
   );
 }
