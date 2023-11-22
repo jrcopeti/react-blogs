@@ -1,21 +1,21 @@
-import { usePosts } from "../PostContext/PostContext";
+import styles from "./Header.module.css";
 
 import SearchPosts from "../SearchPosts/SearchPosts";
 import Results from "../Results/Results";
+import ButtonClearPosts from "../ButtonClearPosts/ButtonClearPosts";
 
 function Header() {
-  // 3) Consuming Context Value
-  const { onClearPosts } = usePosts();
+
   return (
-    <header>
-      <h1>
-        <span>⚛️</span>The Atomic Blog
+    <header className={styles.header}>
+      <h1 className={styles.headerTitle}>
+        The Gallery Blog
       </h1>
-      <div>
+      <div className={styles.searchDiv}>
         <Results />
         <SearchPosts />
-        <button onClick={onClearPosts}>Clear posts</button>
       </div>
+        <ButtonClearPosts />
     </header>
   );
 }

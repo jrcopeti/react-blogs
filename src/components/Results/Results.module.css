@@ -1,0 +1,11 @@
+.results {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .results {
+    font-size: 16px;
+  }
+}

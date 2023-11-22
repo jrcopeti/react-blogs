@@ -1,11 +1,10 @@
-import FormAddPost from "../FormAddPost/FormAddPost";
-import Posts from "../Posts/Posts";
 
+import SelectedPost from "../SelectedPost/SelectedPost";
+import styles from "./Main.module.css";
 function Main() {
   return (
-    <main>
-      <FormAddPost  />
-      <Posts  />
+    <main className={styles.main}>
+   <SelectedPost/>
     </main>
   );
 }

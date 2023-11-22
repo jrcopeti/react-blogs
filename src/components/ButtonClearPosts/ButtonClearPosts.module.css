@@ -1,0 +1,33 @@
+.buttonClearPosts {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 24px;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-medium-light);
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.buttonClearPosts:focus {
+  outline: 1px solid var(--color-light);
+  border-radius: 50px;
+}
+
+.buttonClearPosts:hover {
+  outline: 1px solid var(--color-light);
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonClearPosts {
+    padding: 2px 10px;
+    font-size: 12px;
+    float: none;
+    align-self: normal;
+    justify-content: center;
+  }
+}
