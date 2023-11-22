@@ -1,7 +1,7 @@
 .sidebar {
   grid-column: span 3;
   padding: 0;
-  height: 451px;
+  height: 452px;
   overflow: scroll;
 
 }

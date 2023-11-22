@@ -3,8 +3,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
-  margin-bottom: 15px;
-  margin-right: 2px;
+  margin: 2px 2px 15px 2px;
 }
 
 .form button {
@@ -20,7 +19,7 @@
   cursor: pointer;
 }
 
-.form input{
+.form input {
   padding: 4px 8px;
   background-color: var(--color-dark);
   border: 1px solid var(--color-medium-light);
@@ -28,22 +27,31 @@
   font-family: inherit;
   font-size: 15px;
   font-weight: 300;
-  color: var(--color-white)
+  color: var(--color-white);
+}
+.form input:focus {
+  outline: 1px solid var(--color-light);
+  border-radius: 50px;
+}
+
+.form input:hover {
+  outline: 1px solid var(--color-light);
+  border-radius: 50px;
 }
 
 .form button:focus {
-  outline: 2px solid var(--color-medium-light);
+  outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
 
 .form button:hover {
-  outline: 2px solid var(--color-medium-light);
+  outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
 
-::placeholder {
+input::placeholder {
   color: var(--color-white);
+  opacity: 0.5;
   font-family: inherit;
   font-weight: 300;
-
 }

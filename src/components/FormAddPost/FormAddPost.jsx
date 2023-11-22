@@ -40,17 +40,17 @@ function FormAddPost() {
       <input
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Post title"
+        placeholder="Post title..."
       />
       <input
         value={body}
         onChange={(e) => setBody(e.target.value)}
-        placeholder="Post body"
+        placeholder="Post body..."
       />
       <input
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
-        placeholder="Post author"
+        placeholder="Post author..."
       />
 
       <button>Add post</button>

@@ -19,8 +19,6 @@
   font-weight: 300;
   text-align: center;
 
-
-
 }
 
 .image {
@@ -34,7 +32,19 @@
   column-gap: 15px;
 }
 
-.buttonDiv button {
+.show {
+  padding: 4px 24px;
+  background-color: var(--color-medium);
+  border: 1px solid var(--color-medium-light);
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.archive {
   padding: 4px 24px;
   background-color: var(--color-dark);
   border: 1px solid var(--color-medium-light);
@@ -46,12 +56,13 @@
   cursor: pointer;
 }
 
+
 .buttonDiv button:focus {
-  outline: 2px solid var(--color-medium-light);
+  outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
 
 .buttonDiv button:hover {
-  outline: 2px solid var(--color-medium-light);
+  outline: 1px solid var(--color-light);
   border-radius: 50px;
 }
