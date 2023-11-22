@@ -92,20 +92,30 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
+.archive {
+  ;
+}
+
   .archive ul {
-    flex-direction: column; /* Stack the list items vertically */
-    overflow-x: hidden;
+
   }
 
+
   .archive img {
-    width: 100%; /* Full width */
+    width: 150px; /* Full width */
+    height: auto;
+  }
+
+  .archive h2 {
+    font-size: 18px;
+
   }
 
   .archive p,
-  .archive h2,
   .addButton,
   .showButton,
   .hideButton {
+    font-size: 12px;
     /* Adjust the font sizes and paddings as needed */
   }
 

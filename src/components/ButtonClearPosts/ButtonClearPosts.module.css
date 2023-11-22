@@ -28,5 +28,6 @@
     font-size: 12px;
     float: none;
     align-self: normal;
+    justify-content: center;
   }
 }

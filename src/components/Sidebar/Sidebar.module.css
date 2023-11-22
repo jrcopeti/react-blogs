@@ -17,10 +17,13 @@
 @media only screen and (max-width: 768px) {
   .sidebar {
 
-  /* Convert the sidebar to a top bar or hide it */
-    height: 250px;
+    height: 300px;
    overflow: scroll;
-   order: 0; /* Move it above the main content */
+   order: 0;
+  }
+
+  .formDiv{
+    padding: 12px;
   }
 
 }
