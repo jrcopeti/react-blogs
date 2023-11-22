@@ -1,8 +1,6 @@
 .archive {
-
   margin-bottom: 10px;
   margin-top: 10px;
-
 }
 
 .archive h2 {
@@ -19,7 +17,6 @@
   overflow-x: scroll;
   list-style: none;
   gap: 20px;
-
 }
 
 .archive li {
@@ -92,23 +89,13 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
-.archive {
-  ;
-}
-
-  .archive ul {
-
-  }
-
-
   .archive img {
-    width: 150px; /* Full width */
+    width: 150px;
     height: auto;
   }
 
   .archive h2 {
     font-size: 18px;
-
   }
 
   .archive p,
@@ -116,7 +103,5 @@ button:hover {
   .showButton,
   .hideButton {
     font-size: 12px;
-    /* Adjust the font sizes and paddings as needed */
   }
-
 }

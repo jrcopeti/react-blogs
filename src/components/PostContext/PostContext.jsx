@@ -2,21 +2,18 @@ import { createContext, useContext, useState } from "react";
 import { faker } from "@faker-js/faker";
 
 const NUM_POSTS = 10;
-const NUM_POSTS_ARCHIVE = 10;
-
+const NUM_POSTS_ARCHIVE = 20;
 
 function createDate() {
-const date = faker.date.recent();
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-return date.toLocaleDateString('en-US', options);
+  const date = faker.date.recent();
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return date.toLocaleDateString("en-US", options);
 }
 
 function createRandomPost() {
   const timestamp = new Date().getTime();
   const randomNum = Math.floor(Math.random() * 1000);
   const randomImage = `https://source.unsplash.com/random/800x600?sig=${timestamp}-${randomNum}`;
-
-
 
   return {
     id: `${timestamp}-${randomNum}`,
@@ -39,8 +36,8 @@ function PostProvider({ children }) {
   );
 
   const [archivedPosts, setArchivedPosts] = useState(() =>
-  Array.from({ length: NUM_POSTS_ARCHIVE }, () => createRandomPost())
-);
+    Array.from({ length: NUM_POSTS_ARCHIVE }, () => createRandomPost())
+  );
 
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -58,8 +55,9 @@ function PostProvider({ children }) {
 
   function handleAddPost(post) {
     setPosts((posts) => [...posts, post]);
-    setArchivedPosts((archivedPosts) => archivedPosts.filter((p) => p.id !== post.id));
-
+    setArchivedPosts((archivedPosts) =>
+      archivedPosts.filter((p) => p.id !== post.id)
+    );
   }
 
   function handleArchivePosts(post) {
@@ -68,13 +66,12 @@ function PostProvider({ children }) {
   }
   function handleClearPosts() {
     setPosts([]);
-    setSelectedPost(null)
+    setSelectedPost(null);
   }
 
   function handleSelectPost(post) {
     setSelectedPost(post);
   }
-
 
   return (
     // 2. wrap the components that need access to the context in a Provider and pass the value

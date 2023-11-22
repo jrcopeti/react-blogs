@@ -13,12 +13,13 @@ function FormAddPost() {
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
 
-  const { onAddPost } = usePosts();
+  const { onAddPost, onSelectPost } = usePosts();
 
   const handleSubmit = function (e) {
     e.preventDefault();
     if (!body || !title || !author) return;
-    onAddPost({
+
+    const newPost = {
       id,
       title,
       body,
@@ -30,7 +31,10 @@ function FormAddPost() {
       }),
       subject: faker.hacker.noun(),
       image: randomImage,
-    });
+    };
+    console.log(newPost)
+    onAddPost(newPost);
+    onSelectPost(newPost);
     setTitle("");
     setBody("");
     setAuthor("");

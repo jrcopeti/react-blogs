@@ -1,15 +1,14 @@
 .main {
-  grid-column: span 9; /* Featured article spans 8 out of 12 columns */
-  grid-row: span 4; /* Spans 2 rows for more vertical space */
+  grid-column: span 9;
+  grid-row: span 4;
   padding: 0px;
   margin-right: 30px;
 }
 
 @media only screen and (max-width: 768px) {
   .main {
-    grid-column: 1 / -1; /* Takes full width */
+    grid-column: 1 / -1;
     margin-right: 0;
-    padding: 0 5px; /* Add some padding on the sides */
+    padding: 0 5px;
   }
-
 }
