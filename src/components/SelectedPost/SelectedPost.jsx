@@ -1,4 +1,4 @@
-import { usePosts } from "../PostContext/PostContext";
+import { usePosts } from "../../hooks/usePosts";
 import styles from "./SelectedPost.module.css";
 
 function SelectedPost() {
