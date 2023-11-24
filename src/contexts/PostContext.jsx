@@ -26,7 +26,6 @@ function createRandomPost() {
   };
 }
 
-// title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,
 // 1. Create a context
 const PostContext = createContext();
 
@@ -64,6 +63,10 @@ function PostProvider({ children }) {
   function handleArchivePosts(post) {
     setPosts((posts) => posts.filter((p) => p.id !== post.id));
     setArchivedPosts((archivedPosts) => [...archivedPosts, post]);
+    if (selectedPost.id === post.id) {
+      const index = posts.findIndex((p) => p.id === post.id);
+      setSelectedPost(posts[index + 1] || null);
+    }
   }
   function handleClearPosts() {
     setPosts([]);
@@ -95,11 +98,4 @@ function PostProvider({ children }) {
   );
 }
 
-function usePosts() {
-  const context = useContext(PostContext);
-  if (context === undefined) {
-    throw new Error("usePosts must be used within a PostProvider");
-  }
-  return context;
-}
-export { PostProvider, usePosts };
+export { PostProvider, PostContext };

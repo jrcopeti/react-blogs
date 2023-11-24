@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { usePosts } from "../PostContext/PostContext";
+import { usePosts } from "../../hooks/usePosts";
 import { faker } from "@faker-js/faker";
 import styles from "./FormAddPost.module.css";
 

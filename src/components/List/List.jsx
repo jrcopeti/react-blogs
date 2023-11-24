@@ -1,4 +1,4 @@
-import { usePosts } from "../PostContext/PostContext";
+import { usePosts } from "../../hooks/usePosts";
 import styles from "./List.module.css";
 function List() {
   const { posts, onSelectPost, onArchivePost } = usePosts();
@@ -15,8 +15,18 @@ function List() {
               onClick={() => onSelectPost(post)}
             />
             <div className={styles.buttonDiv}>
-            <button className={styles.show} onClick={() => onSelectPost(post)}>Show</button>
-            <button className={styles.archive} onClick={() => onArchivePost(post)}>Archive</button>
+              <button
+                className={styles.show}
+                onClick={() => onSelectPost(post)}
+              >
+                Show
+              </button>
+              <button
+                className={styles.archive}
+                onClick={() => onArchivePost(post)}
+              >
+                Archive
+              </button>
             </div>
           </li>
         ))}

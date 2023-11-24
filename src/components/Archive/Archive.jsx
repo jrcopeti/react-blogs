@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { usePosts } from "../PostContext/PostContext";
+import { usePosts } from "../../hooks/usePosts";
 
 import styles from "./Archive.module.css";
 
@@ -8,6 +8,8 @@ function Archive() {
   const { onAddPost, archivedPosts } = usePosts();
 
   const [showArchive, setShowArchive] = useState(false);
+
+  console.log(archivedPosts)
 
   return (
     <aside className={styles.archive}>
