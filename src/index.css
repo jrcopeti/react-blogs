@@ -15,9 +15,10 @@
 
 body {
   font-family: "Helvetica Neue", sans-serif;
-
   color: var(--color-white);
   background: var(--color-dark);
   line-height: 1.25;
   padding: 20px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
